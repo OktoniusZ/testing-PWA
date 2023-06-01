@@ -1,0 +1,4 @@
+catatan : 
+- notifikasi dan websocket masih yang movie (harus ganti ke yang restaurant)
+- pake eslint untuk cek gaya penulisan kode
+- perbaiki semua nama function

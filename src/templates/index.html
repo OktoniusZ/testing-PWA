@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#DB0000"/>
+    <title>Rest Apps</title>
+    
+    <!-- font awesome link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="apple-touch-icon" href="/icons/icon-192x192.png">
+    <link rel="manifest" href="./app.webmanifest">
+    <link rel="icon" href="./cutlery.png">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <script src="https://use.fontawesome.com/b070c8f1df.js"></script>
+
+    <style>
+        @media screen and (max-width: 600px) {
+            #main .hero-img {
+                background-image: url(hero-image_2-small.jpg);
+            }
+        }
+
+        @media screen and (min-width: 601px) {
+            #main .hero-img {
+                background-image: url(hero-image_2-large.jpg);
+            }   
+        }
+    </style>
+</head>
+
+<body>
+    <!-- skip to content -->
+    <a href="#daftar-restoran" class="skip-link" tabindex="1">Menuju Ke Konten</a>
+    <!-- start navigation bar -->
+    <nav class="navbar">
+        <div class="navbar-container">
+            <a href="#/home" class="logo">REST</a>
+            <ul class="nav-menu" id="nav-menu">
+                <li><a href="/" >Home</a></li>
+                <li><a href="#/favorite" >Favorite</a></li>
+                <li><a href="https://www.instagram.com/oktoniuszevanya/?hl=id" >About Us</a></li>
+            </ul>
+            <div class="navbar-toggle" id="navbar-toggle">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </nav>
+    <!-- end navigation bar -->
+
+
+    <!-- start hero element -->
+    <div id="main">
+        <div class="hero-img" title="Restoran Terbaik"></div>
+        <div class="hero-info">
+            <h1>Selamat datang di <span>restaurant</span> kami</h1>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
+            Unde iure ullam perferendis necessitatibus soluta
+            dicta fugiat non corporis eius aspernatur aperiam, 
+            tenetur repellat odit eum doloribus deleniti quae enim
+            beatae.
+            </p>
+            <button 
+            onclick="window.location.href='#daftar-restoran'" 
+            id="hero-button" tabindex="1">Daftar Restoran 
+            </button>
+        </div>
+    </div>
+    <!-- end hero element -->
+
+    <!-- start content element -->
+    <section id="content" tabindex="0">
+        <main id="mainContent"></main>
+    </section>
+    <!-- end content element -->
+</body>
+</html>

@@ -1,0 +1,168 @@
+$primary: rgba(231, 76, 60,1.0);
+$secondary: rgba(52, 73, 94,1.0);
+
+
+@media (min-width: 1200px) {
+    main {
+      .hero-img {
+        width: 0;
+        // min-width: 1000px;
+      }
+  
+      .hero-info {
+        p {
+          padding: 0 5rem;
+        }
+      }
+    }
+  }
+
+  @media (max-width: 1300px){
+    #restaurant-detail {
+      margin: 1rem 2rem;
+    }
+
+    #drinks-container, #foods-container, #reviews-container {
+      margin: 0 1.5rem;
+    }
+
+    #foods-container {
+      margin-top: 1rem;
+    }
+  }
+  
+  @media (max-width: 1063px) {
+    #restaurant-detail {
+      margin: 1rem 2rem;
+    }
+  }
+  
+  @media (max-width: 991px) {
+  }
+  
+  @media screen and (max-width: 768px) {
+    #restaurant-detail {
+      flex-wrap: wrap;
+      margin: 1rem 1rem;
+
+      .image {
+        width: 100%;
+        img {
+          width: 100%;
+        }
+      }
+    }
+
+   .navbar {
+    .navbar-container {
+      .nav-menu {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        background-color: #fff;
+        width: 100%;
+        padding: 0 20px;
+
+        &.active {
+          display: flex;
+
+          li {
+            a {
+                color: #333;
+            }
+          }
+        }
+  
+        li {
+          margin: 10px 0;
+        }
+      }
+      .navbar-toggle {
+        display: block;
+        color: #333;
+        font-size: 24px;
+      }
+    }
+   }
+  }
+
+  @media (max-width: 650px) {
+    .daftar-restoran {
+      margin: 0 2rem;
+  
+      .list-resto {
+        h1 {
+          font-size: 1.5em;
+        }
+  
+        .resto-info {
+          p {
+            font-size: 0.7em;
+            line-height: 1.2rem;
+          }
+        }
+      }
+    }
+  
+    .main {
+      .card-section {
+        .card {
+          height: 420px;
+  
+          .content {
+            visibility: visible;
+            opacity: 1;
+            margin-top: -40px;
+            transition-delay: 0.3s;
+          }
+        }
+      }
+    }
+  }
+  
+  @media (max-width: 480px) {
+    #restaurant-detail {
+      .image {
+        margin: 0 auto;
+      }
+    }
+
+    #drinks-container, #foods-container, #reviews-container {
+      margin: 0 1rem;
+      h2 {
+        font-size: 1.5rem;
+      }
+      
+      ul {
+        columns: 2;
+        -webkit-columns: 2;
+        -moz-columns: 2;
+        list-style: none;
+        padding: 0;
+        
+        p {
+          margin-bottom: .5rem;
+        }
+      }
+    }
+
+    #foods-container {
+      margin-top: 1rem;
+    }
+
+    footer {
+      h2 {
+        font-size: 1rem;
+      }
+    }
+  }
+  @media (max-width: 370px) {
+    .main {
+      .card-section {
+        padding: 0;
+      }
+    }
+  }
+  
